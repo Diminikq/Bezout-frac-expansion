@@ -22,7 +22,13 @@ For rational numbers:
   example for sqrt(2): 1+1/3+1/15+1/85+1/493+1/2871+1/16731+...
 
 ** The method works even for the condition ax-by=-1, but may result (resp. results, 
-though not neccessarily in this implementation) in an expansion with negative terms. 
+though not neccessarily in this implementation) in an expansion with negative terms.
+This implementation can be used as a hybrid (parameter neg equal to 1), which results in fewer terms.
+
+examples for 7/12: 
+                  1. ax+by=1 (neg = 0) : 7/12 = 1/2 + 1/14 + 1/84
+                  2. ax+by=-1: 1 - 1/3 - 1/15 - 1/60
+                  3. hybrid ax+by=+-1 (neg = 1): 7/12 = 1/2 + 1/10 - 1/60
 
 *** a/b - y/x = (ax-by)/(by) = 1/(by) using (1) Q.E.D - the result is always a unit fraction
 
